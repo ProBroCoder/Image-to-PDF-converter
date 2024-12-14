@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to PDF converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Image to PDF converter</h1>
+        <div class="upload-img">
+            <input type="file" name="" onChange="loadImg(event)" accept=".png, .jpg, .jpeg">
+            Upload Image
+        </div>
+        <img id="showImg" src="Gallery.jpg">
+        <button onclick="pdfDown()">Image to PDF</button>
+     </div> 
+     <div class="Left">
+        <button class="Cancel-btn" onclick="reload()">Cancel </button>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
